@@ -29,3 +29,29 @@ h1 {
 .orders {
     margin: 20px 0;
 }
+
+input, select, button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: "Microsoft Sans Serif", serif;
+    font-size: 16px;
+}
+
+label {
+    font-family: "Arial", serif;
+    font-size: 16px;
+    color: #ad09aa;
+}
+
+.submit {
+    background-color: #4df14d;
+}
+
+.reset {
+    background-color: #f85454;
+}
+
+.rules {
+    font-style: italic;
+    color: #1a1818;
+}

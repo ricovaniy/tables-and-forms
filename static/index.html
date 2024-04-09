@@ -12,7 +12,7 @@
     <form action="http://localhost:3000/pets/orders" method="POST">
         <label for="name">
             Имя хозяина:
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" placeholder="Junko" required><br>
         </label>
 
         <label for="petType">
@@ -29,8 +29,8 @@
         <label for="gender">
             Пол:
             <select id="gender" name="gender" required>
-                <option value="female">Ж</option>
-                <option value="male">М</option>
+                <option value="girl">Ж</option>
+                <option value="boy">М</option>
             </select><br>
         </label>
 
@@ -41,16 +41,31 @@
 
         <label for="eyeColor">
             Цвет глаз:
-            <select id="eyeColor" name="eyeColor" required>
-                <option value="green">Зелёный</option>
-                <option value="blue">Голубой</option>
-                <option value="yellow">Жёлтый</option>
-                <option value="brown">Карий</option>
-            </select><br>
+            <input type="color" id="eyeColor" name="eyeColor" required><br>
         </label>
 
-        <button type="submit">Отправить</button>
-        <button type="reset">Сбросить</button>
+        <label for="tailLength">
+            Длина хвоста:
+            <input type="number" id="tailLength" name="tailLength" placeholder="10" min="7" max="120" required><br>
+        </label>
+
+        <label for="email">
+            Email:
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+        </label>
+
+        <label for="phone">
+            Номер телефона:
+            <input type="tel" id="phone" name="phone" placeholder="8(800)555-3535" pattern="[0-9]\([0-9]{3}\)[0-9]{3}-[0-9]{4}" required><br>
+        </label>
+
+        <label for="rules" class="rules">
+            <input type="checkbox" id="rules" name="rules" value="true" required>
+            Я соглашаюсь на обработку персональных данных<br>
+        </label>
+
+        <button type="submit" class="submit">Отправить</button>
+        <button type="reset" class="reset">Сбросить</button>
     </form>
 
 </main>
