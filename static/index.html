@@ -9,7 +9,49 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="http://localhost:3000/pets/orders" method="POST">
+        <label for="name">
+            Имя хозяина:
+            <input type="text" id="name" name="name" required><br>
+        </label>
+
+        <label for="petType">
+            Тип питомца:
+            <select id="petType" name="petType" required>
+                <option value="cat">Кошка</option>
+                <option value="dog">Собака</option>
+                <option value="turtle">Черепаха</option>
+                <option value="rabbit">Кролик</option>
+                <option value="guineaPig">Морская свинка</option>
+            </select><br>
+        </label>
+
+        <label for="gender">
+            Пол:
+            <select id="gender" name="gender" required>
+                <option value="female">Ж</option>
+                <option value="male">М</option>
+            </select><br>
+        </label>
+
+        <label for="dateOfBirth">
+            Дата рождения:
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required><br>
+        </label>
+
+        <label for="eyeColor">
+            Цвет глаз:
+            <select id="eyeColor" name="eyeColor" required>
+                <option value="green">Зелёный</option>
+                <option value="blue">Голубой</option>
+                <option value="yellow">Жёлтый</option>
+                <option value="brown">Карий</option>
+            </select><br>
+        </label>
+
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить</button>
+    </form>
 
 </main>
 </body>
